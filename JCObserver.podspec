@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "JCObserve"
+  s.name         = "JCObserver"
   s.version      = "1.0.0"
   s.summary      = "方便KVO操作的工具"
 

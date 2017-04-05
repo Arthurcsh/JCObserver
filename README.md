@@ -47,13 +47,13 @@ JCObserve为一个宏指令，上面代码是对，self.person的username属性�
 
 ### CocoaPods
 
-1. 在Podfile文件中添加 `pod 'JCObserve'`
+1. 在Podfile文件中添加 `pod 'JCObserver'`
 2. 执行 `pod install` 或 `pod update` 命令
-3. 引文头文件 `#import <JCFrameLayout/JCFrameLayout.h>`
+3. 引文头文件 `#import <JCObserver/JCObserver.h>`
 
 ### 手动安装
 
-1. 下载JCFrameLayout项目
-2. 将JCFrameLayout文件夹拖入到项目中
-3. 引文头文件 `#import "JCFrameLayout.h"`
+1. 下载JCObserver项目
+2. 将JCObserver文件夹拖入到项目中
+3. 引文头文件 `#import "JCObserver.h"`
 
