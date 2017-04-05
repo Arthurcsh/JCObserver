@@ -10,12 +10,17 @@
 		286562641E92279800707580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562631E92279800707580 /* main.m */; };
 		286562671E92279800707580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562661E92279800707580 /* AppDelegate.m */; };
 		2865626A1E92279800707580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562691E92279800707580 /* ViewController.m */; };
-		2865626D1E92279800707580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2865626B1E92279800707580 /* Main.storyboard */; };
 		2865626F1E92279800707580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2865626E1E92279800707580 /* Assets.xcassets */; };
 		286562721E92279800707580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286562701E92279800707580 /* LaunchScreen.storyboard */; };
-		286562821E9360DB00707580 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562811E9360DB00707580 /* Person.m */; };
-		286562861E937BD900707580 /* JCObserveCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562851E937BD900707580 /* JCObserveCallback.m */; };
 		286562901E93B50200707580 /* NSObject+JCObserve.m in Sources */ = {isa = PBXBuildFile; fileRef = 2865628F1E93B50200707580 /* NSObject+JCObserve.m */; };
+		286562931E94905A00707580 /* JCObserveKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562921E94905A00707580 /* JCObserveKeyPath.m */; };
+		286562971E94987000707580 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562961E94987000707580 /* Person.m */; };
+		2865629D1E94994000707580 /* ExampleVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2865629C1E94994000707580 /* ExampleVC1.m */; };
+		286562A01E9499E800707580 /* JCDemoHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2865629F1E9499E800707580 /* JCDemoHomeVC.m */; };
+		286562A31E949CB200707580 /* ExampleVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562A21E949CB200707580 /* ExampleVC2.m */; };
+		286562A61E949CBF00707580 /* ExampleVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562A51E949CBF00707580 /* ExampleVC3.m */; };
+		286562A91E94A74A00707580 /* ExampleVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 286562A81E94A74A00707580 /* ExampleVC4.m */; };
+		DBDE06FB8EFC5A3D41A9F8B4 /* Pods_JCObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704086C2529B4414BA176CB8 /* Pods_JCObserver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,18 +30,30 @@
 		286562661E92279800707580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		286562681E92279800707580 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		286562691E92279800707580 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2865626C1E92279800707580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2865626E1E92279800707580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286562711E92279800707580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		286562731E92279800707580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2865627A1E92287D00707580 /* JCObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCObserver.h; sourceTree = "<group>"; };
-		286562801E9360DB00707580 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		286562811E9360DB00707580 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		286562831E9367B200707580 /* JCObserverMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCObserverMacros.h; sourceTree = "<group>"; };
-		286562841E937BD900707580 /* JCObserveCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCObserveCallback.h; sourceTree = "<group>"; };
-		286562851E937BD900707580 /* JCObserveCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCObserveCallback.m; sourceTree = "<group>"; };
+		2865627A1E92287D00707580 /* JCObserve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCObserve.h; sourceTree = "<group>"; };
+		286562831E9367B200707580 /* JCObserveMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCObserveMacros.h; sourceTree = "<group>"; };
 		2865628E1E93B50200707580 /* NSObject+JCObserve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JCObserve.h"; sourceTree = "<group>"; };
 		2865628F1E93B50200707580 /* NSObject+JCObserve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JCObserve.m"; sourceTree = "<group>"; };
+		286562911E94905A00707580 /* JCObserveKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCObserveKeyPath.h; sourceTree = "<group>"; };
+		286562921E94905A00707580 /* JCObserveKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCObserveKeyPath.m; sourceTree = "<group>"; };
+		286562951E94987000707580 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		286562961E94987000707580 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2865629B1E94994000707580 /* ExampleVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleVC1.h; sourceTree = "<group>"; };
+		2865629C1E94994000707580 /* ExampleVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleVC1.m; sourceTree = "<group>"; };
+		2865629E1E9499E800707580 /* JCDemoHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDemoHomeVC.h; sourceTree = "<group>"; };
+		2865629F1E9499E800707580 /* JCDemoHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDemoHomeVC.m; sourceTree = "<group>"; };
+		286562A11E949CB200707580 /* ExampleVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleVC2.h; sourceTree = "<group>"; };
+		286562A21E949CB200707580 /* ExampleVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleVC2.m; sourceTree = "<group>"; };
+		286562A41E949CBF00707580 /* ExampleVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleVC3.h; sourceTree = "<group>"; };
+		286562A51E949CBF00707580 /* ExampleVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleVC3.m; sourceTree = "<group>"; };
+		286562A71E94A74A00707580 /* ExampleVC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleVC4.h; sourceTree = "<group>"; };
+		286562A81E94A74A00707580 /* ExampleVC4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleVC4.m; sourceTree = "<group>"; };
+		704086C2529B4414BA176CB8 /* Pods_JCObserver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF02F35FA2A9466F43AFBA9 /* Pods-JCObserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCObserver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCObserver/Pods-JCObserver.debug.xcconfig"; sourceTree = "<group>"; };
+		C439F484F809696173A24E28 /* Pods-JCObserver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCObserver.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCObserver/Pods-JCObserver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDE06FB8EFC5A3D41A9F8B4 /* Pods_JCObserver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A312C0DC95FAF26A8A0BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704086C2529B4414BA176CB8 /* Pods_JCObserver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		286562561E92279800707580 = {
 			isa = PBXGroup;
 			children = (
 				286562611E92279800707580 /* JCObserver */,
 				286562601E92279800707580 /* Products */,
+				71D43A9C941D04C43AD9DE19 /* Pods */,
+				20A312C0DC95FAF26A8A0BB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +102,9 @@
 				286562661E92279800707580 /* AppDelegate.m */,
 				286562681E92279800707580 /* ViewController.h */,
 				286562691E92279800707580 /* ViewController.m */,
-				286562801E9360DB00707580 /* Person.h */,
-				286562811E9360DB00707580 /* Person.m */,
-				2865626B1E92279800707580 /* Main.storyboard */,
+				2865629E1E9499E800707580 /* JCDemoHomeVC.h */,
+				2865629F1E9499E800707580 /* JCDemoHomeVC.m */,
+				286562941E94985700707580 /* Examples */,
 				2865626E1E92279800707580 /* Assets.xcassets */,
 				286562701E92279800707580 /* LaunchScreen.storyboard */,
 				286562731E92279800707580 /* Info.plist */,
@@ -96,14 +124,40 @@
 		286562791E92286E00707580 /* JCObserver */ = {
 			isa = PBXGroup;
 			children = (
-				2865627A1E92287D00707580 /* JCObserver.h */,
-				286562831E9367B200707580 /* JCObserverMacros.h */,
-				286562841E937BD900707580 /* JCObserveCallback.h */,
-				286562851E937BD900707580 /* JCObserveCallback.m */,
+				2865627A1E92287D00707580 /* JCObserve.h */,
+				286562831E9367B200707580 /* JCObserveMacros.h */,
+				286562911E94905A00707580 /* JCObserveKeyPath.h */,
+				286562921E94905A00707580 /* JCObserveKeyPath.m */,
 				2865628E1E93B50200707580 /* NSObject+JCObserve.h */,
 				2865628F1E93B50200707580 /* NSObject+JCObserve.m */,
 			);
 			path = JCObserver;
+			sourceTree = "<group>";
+		};
+		286562941E94985700707580 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				286562951E94987000707580 /* Person.h */,
+				286562961E94987000707580 /* Person.m */,
+				2865629B1E94994000707580 /* ExampleVC1.h */,
+				2865629C1E94994000707580 /* ExampleVC1.m */,
+				286562A11E949CB200707580 /* ExampleVC2.h */,
+				286562A21E949CB200707580 /* ExampleVC2.m */,
+				286562A41E949CBF00707580 /* ExampleVC3.h */,
+				286562A51E949CBF00707580 /* ExampleVC3.m */,
+				286562A71E94A74A00707580 /* ExampleVC4.h */,
+				286562A81E94A74A00707580 /* ExampleVC4.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		71D43A9C941D04C43AD9DE19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEF02F35FA2A9466F43AFBA9 /* Pods-JCObserver.debug.xcconfig */,
+				C439F484F809696173A24E28 /* Pods-JCObserver.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 286562761E92279800707580 /* Build configuration list for PBXNativeTarget "JCObserver" */;
 			buildPhases = (
+				82A4522895E0F10AEA1C4104 /* [CP] Check Pods Manifest.lock */,
 				2865625B1E92279800707580 /* Sources */,
 				2865625C1E92279800707580 /* Frameworks */,
 				2865625D1E92279800707580 /* Resources */,
+				A31B8282AB9397FAA27C40A0 /* [CP] Embed Pods Frameworks */,
+				92928BC6378468A6BB652C01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,22 +224,74 @@
 			files = (
 				286562721E92279800707580 /* LaunchScreen.storyboard in Resources */,
 				2865626F1E92279800707580 /* Assets.xcassets in Resources */,
-				2865626D1E92279800707580 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82A4522895E0F10AEA1C4104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92928BC6378468A6BB652C01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCObserver/Pods-JCObserver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31B8282AB9397FAA27C40A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCObserver/Pods-JCObserver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2865625B1E92279800707580 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286562821E9360DB00707580 /* Person.m in Sources */,
+				286562A91E94A74A00707580 /* ExampleVC4.m in Sources */,
 				2865626A1E92279800707580 /* ViewController.m in Sources */,
+				2865629D1E94994000707580 /* ExampleVC1.m in Sources */,
+				286562971E94987000707580 /* Person.m in Sources */,
+				286562931E94905A00707580 /* JCObserveKeyPath.m in Sources */,
 				286562671E92279800707580 /* AppDelegate.m in Sources */,
+				286562A31E949CB200707580 /* ExampleVC2.m in Sources */,
+				286562A01E9499E800707580 /* JCDemoHomeVC.m in Sources */,
+				286562A61E949CBF00707580 /* ExampleVC3.m in Sources */,
 				286562901E93B50200707580 /* NSObject+JCObserve.m in Sources */,
-				286562861E937BD900707580 /* JCObserveCallback.m in Sources */,
 				286562641E92279800707580 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,14 +299,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2865626B1E92279800707580 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2865626C1E92279800707580 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		286562701E92279800707580 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,6 +402,7 @@
 		};
 		286562771E92279800707580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF02F35FA2A9466F43AFBA9 /* Pods-JCObserver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H4BT36KNDU;
@@ -313,6 +415,7 @@
 		};
 		286562781E92279800707580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C439F484F809696173A24E28 /* Pods-JCObserver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H4BT36KNDU;
@@ -342,6 +445,7 @@
 				286562781E92279800707580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
 //  Person.h
-//  JCObserver
+//  JCObserve
 //
 //  Created by abc on 17/4/4.
 //  Copyright © 2017年 jackcat. All rights reserved.
@@ -11,5 +11,10 @@
 @interface Person : NSObject
 
 @property (nonatomic,copy) NSString *username;
+@property (nonatomic,copy) NSString *address;
+/**
+ *  <#注释#>
+ **/
+@property (nonatomic,assign) NSInteger age;
 
 @end

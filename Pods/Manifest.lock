@@ -1,0 +1,12 @@
+PODS:
+  - JCFrameLayout (2.0.3)
+
+DEPENDENCIES:
+  - JCFrameLayout
+
+SPEC CHECKSUMS:
+  JCFrameLayout: c9cfcb224c1a1c3d0b01084bc8aeeeeedad4f3b8
+
+PODFILE CHECKSUM: 25898848659c42975d279a83c398f4bd49a8aef0
+
+COCOAPODS: 1.2.0.rc.1

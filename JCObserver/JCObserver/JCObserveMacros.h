@@ -1,6 +1,6 @@
 //
-//  JCObserverMacros.h
-//  JCObserver
+//  JCObserveMacros.h
+//  JCObserve
 //
 //  Created by abc on 17/4/4.
 //  Copyright © 2017年 jackcat. All rights reserved.
@@ -10,8 +10,8 @@
  *  该文件中的宏来自原ReactiveCocoa项目
  */
 
-#ifndef JCObserverMacros_h
-#define JCObserverMacros_h
+#ifndef JCObserveMacros_h
+#define JCObserveMacros_h
 
 /**
  *
@@ -74,4 +74,4 @@ _Pragma("clang diagnostic pop") \
 })
 #endif
 
-#endif /* JCObserverMacros_h */
+#endif /* JCObserveMacros_h */

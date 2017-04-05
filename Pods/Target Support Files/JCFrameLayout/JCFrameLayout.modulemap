@@ -1,0 +1,6 @@
+framework module JCFrameLayout {
+  umbrella header "JCFrameLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
