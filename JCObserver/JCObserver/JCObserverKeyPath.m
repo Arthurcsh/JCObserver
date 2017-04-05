@@ -6,9 +6,9 @@
 //  Copyright © 2017年 jackcat. All rights reserved.
 //
 
-#import "JCObserveKeyPath.h"
+#import "JCObserverKeyPath.h"
 
-@implementation JCObserveKeyPath
+@implementation JCObserverKeyPath
 
 - (instancetype)initWithKeyPath:(NSString*)keypath{
     self = [super init];

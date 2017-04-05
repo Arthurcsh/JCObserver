@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JCObserveCallback : NSObject
+@interface JCObserverCallback : NSObject
 
 /**
  *  监听的对象

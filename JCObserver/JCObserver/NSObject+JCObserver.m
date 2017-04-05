@@ -6,7 +6,7 @@
 //  Copyright © 2017年 jackcat. All rights reserved.
 //
 
-#import "NSObject+JCObserve.h"
+#import "NSObject+JCObserver.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 
@@ -79,10 +79,10 @@ static void kvo_setter(id self, SEL _cmd, id newValue)
     objc_msgSendSuperCasted(&superclazz, _cmd, newValue);
     
     // look up observers and call the blocks
-    NSMutableArray<JCObserveKeyPath*>* objserveKeyPaths = objc_getAssociatedObject(self, &jc_callbacks_key);
-    for (JCObserveKeyPath *objserveKeyPath in objserveKeyPaths) {
-        if ([objserveKeyPath.keypath isEqualToString:getterName]) {
-            objserveKeyPath.changedBlcok ? objserveKeyPath.changedBlcok(newValue,oldValue) : 0 ;
+    NSMutableArray<JCObserverKeyPath*>* objserverKeyPaths = objc_getAssociatedObject(self, &jc_callbacks_key);
+    for (JCObserverKeyPath *objserverKeyPath in objserverKeyPaths) {
+        if ([objserverKeyPath.keypath isEqualToString:getterName]) {
+            objserverKeyPath.changedBlcok ? objserverKeyPath.changedBlcok(newValue,oldValue) : 0 ;
         }
     }
 }
@@ -94,9 +94,9 @@ static Class kvo_class(id self, SEL _cmd)
 
 #pragma mark - NSObject + JCObserve
 
-@implementation NSObject (JCObserve)
+@implementation NSObject (JCObserver)
 
-- (JCObserveKeyPath*)jc_observeValueForKeyPath:(NSString*)keypath{
+- (JCObserverKeyPath*)jc_observeValueForKeyPath:(NSString*)keypath{
     
     SEL setterSelector = NSSelectorFromString(setterForGetter(keypath));
     Method setterMethod = class_getInstanceMethod([self class], setterSelector);
@@ -126,20 +126,10 @@ static Class kvo_class(id self, SEL _cmd)
         }
     }
     
-    JCObserveKeyPath *observeKeyPath = [[JCObserveKeyPath alloc]initWithKeyPath:keypath];
+    JCObserverKeyPath *observeKeyPath = [[JCObserverKeyPath alloc]initWithKeyPath:keypath];
     [self.jc_observekeypaths addObject:observeKeyPath];
     
     return observeKeyPath;
-    
-//    PGObservationInfo *info = [[PGObservationInfo alloc] initWithObserver:observer Key:key block:block];
-//    NSMutableArray *observers = objc_getAssociatedObject(self, (__bridge const void *)(kPGKVOAssociatedObservers));
-//    if (!observers) {
-//        observers = [NSMutableArray array];
-//        objc_setAssociatedObject(self, (__bridge const void *)(kPGKVOAssociatedObservers), observers, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//    }
-//    [observers addObject:info];
-    
-    return self;
 }
 
 - (Class)createObserveSubClassWithOriginalClassName:(NSString *)originalClazzName
@@ -165,9 +155,9 @@ static Class kvo_class(id self, SEL _cmd)
     return kvoClazz;
 }
 
-- (NSMutableArray<JCObserveKeyPath*>*)jc_observekeypaths{
+- (NSMutableArray<JCObserverKeyPath*>*)jc_observekeypaths{
     
-    NSMutableArray<JCObserveKeyPath*> *array = objc_getAssociatedObject(self, &jc_callbacks_key);
+    NSMutableArray<JCObserverKeyPath*> *array = objc_getAssociatedObject(self, &jc_callbacks_key);
     if (!array) {
         array = [NSMutableArray array];
         objc_setAssociatedObject(self, &jc_callbacks_key, array, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

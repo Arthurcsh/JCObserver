@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 
-#import "JCObserveMacros.h"
-#import "NSObject+JCObserve.h"
+#import "JCObserverMacros.h"
+#import "NSObject+JCObserver.h"

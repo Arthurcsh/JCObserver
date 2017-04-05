@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (JCObserve_History_1)
+@interface NSObject (JCObserver_History_1)
 
 /**
     KVO监听

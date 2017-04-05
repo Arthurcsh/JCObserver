@@ -7,7 +7,7 @@
 //
 
 #import "ExampleVC1.h"
-#import "JCObserve.h"
+#import "JCObserver.h"
 #import "Person.h"
 
 #import <JCFrameLayout/JCFrameLayout.h>
@@ -68,24 +68,19 @@
     
     self.person = [Person new];
     
-    [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+    [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
         NSLog(@"\n--p.username被改变了--1，newValue = %@ oldValue=%@",newValue,oldValue);
     }];
 
-    [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+    [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
         NSLog(@"\n--p.username被改变了--2，newValue = %@ oldValue=%@",newValue,oldValue);
     }];
     
-    [JCObserve(self.person, address) changed:^(id newValue, id oldValue) {
+    [JCObserver(self.person, address) changed:^(id newValue, id oldValue) {
         NSLog(@"\n--p.address被改变了--1，newValue = %@ oldValue=%@",newValue,oldValue);
     }];
-    [JCObserve(self.person, address) changed:^(id newValue, id oldValue) {
+    [JCObserver(self.person, address) changed:^(id newValue, id oldValue) {
         NSLog(@"\n--p.address被改变了--2，newValue = %@ oldValue=%@",newValue,oldValue);
-    }];
-    
-    
-    [JCObserve(self.person, age) changed:^(id newValue, id oldValue) {
-        NSLog(@"\n--p.age被改变了--2，newValue = %@ oldValue=%@",newValue,oldValue);
     }];
 }
 
@@ -96,7 +91,6 @@
 - (void)changeAddress:(UIButton*)sender{
     NSString *address = [NSString stringWithFormat:@"address_%zd",arc4random_uniform(10)];
     self.person.address = address;
-    self.person.age = 10;
 }
 
 - (void)dealloc{

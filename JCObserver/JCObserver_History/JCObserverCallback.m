@@ -6,9 +6,9 @@
 //  Copyright © 2017年 jackcat. All rights reserved.
 //
 
-#import "JCObserveCallback.h"
+#import "JCObserverCallback.h"
 
-@implementation JCObserveCallback
+@implementation JCObserverCallback
 
 - (instancetype)initWithObj:(id)obj keypath:(NSString*)keypath changedBlock:(void(^)(id newValue,id oldValue))changedBlock{
     self = [super init];

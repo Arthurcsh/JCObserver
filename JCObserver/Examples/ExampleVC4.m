@@ -7,7 +7,7 @@
 //
 
 #import "ExampleVC4.h"
-#import "JCObserve.h"
+#import "JCObserver.h"
 #import <JCFrameLayout/JCFrameLayout.h>
 
 #import <objc/runtime.h>
@@ -87,7 +87,7 @@ static void printDescription(NSString* name, id obj)
 }
 
 - (void)setObserve{
-    [JCObserve(self.redView, frame) changed:^(id newValue, id oldValue) {
+    [JCObserver(self.redView, frame) changed:^(id newValue, id oldValue) {
         NSLog(@"\n frame changed: new = %@,old = %@",newValue,oldValue);
     }];
 }

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JCObserveKeyPath : NSObject
+@interface JCObserverKeyPath : NSObject
 
 /**
  *  <#注释#>

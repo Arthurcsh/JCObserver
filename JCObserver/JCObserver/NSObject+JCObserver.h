@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JCObserveKeyPath.h"
+#import "JCObserverKeyPath.h"
 
-@interface NSObject (JCObserve)
+@interface NSObject (JCObserver)
 
-- (JCObserveKeyPath*)jc_observeValueForKeyPath:(NSString*)keypath;
+- (JCObserverKeyPath*)jc_observeValueForKeyPath:(NSString*)keypath;
 
 @end

@@ -71,7 +71,7 @@ BOOL hasOriDeallocMethod = NO;
 
 #pragma mark - NSObject + JCObserve
 
-@implementation NSObject (JCObserve_History_1)
+@implementation NSObject (JCObserver_History_1)
 
 
 /**

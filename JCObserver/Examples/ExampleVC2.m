@@ -7,7 +7,7 @@
 //
 
 #import "ExampleVC2.h"
-#import "JCObserve.h"
+#import "JCObserver.h"
 #import "Person.h"
 
 #import <JCFrameLayout/JCFrameLayout.h>
@@ -54,27 +54,27 @@
     self.person = [Person new];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+        [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
             NSLog(@"\n--p.username被改变了--1，newValue = %@ oldValue=%@",newValue,oldValue);
         }];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+        [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
             NSLog(@"\n--p.username被改变了--2，newValue = %@ oldValue=%@",newValue,oldValue);
         }];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+        [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
             NSLog(@"\n--p.username被改变了--3，newValue = %@ oldValue=%@",newValue,oldValue);
         }];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+        [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
             NSLog(@"\n--p.username被改变了--4，newValue = %@ oldValue=%@",newValue,oldValue);
         }];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [JCObserve(self.person, username) changed:^(id newValue, id oldValue) {
+        [JCObserver(self.person, username) changed:^(id newValue, id oldValue) {
             NSLog(@"\n--p.username被改变了--5，newValue = %@ oldValue=%@",newValue,oldValue);
         }];
     });

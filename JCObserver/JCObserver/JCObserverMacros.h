@@ -54,7 +54,7 @@
 
 
 
-#define _JCObserve(TARGET, KEYPATH) \
+#define _JCObserver(TARGET, KEYPATH) \
 ({ \
 __weak id target_ = (TARGET); \
 [target_ jc_observeValueForKeyPath:@jc_keypath(TARGET, KEYPATH)];\
@@ -63,13 +63,13 @@ __weak id target_ = (TARGET); \
 
 
 #if __clang__ && (__clang_major__ >= 8)
-#define JCObserve(TARGET, KEYPATH) _JCObserve(TARGET, KEYPATH)
+#define JCObserver(TARGET, KEYPATH) _JCObserver(TARGET, KEYPATH)
 #else
-#define JCObserve(TARGET, KEYPATH) \
+#define JCObserver(TARGET, KEYPATH) \
 ({ \
 _Pragma("clang diagnostic push") \
 _Pragma("clang diagnostic ignored \"-Wreceiver-is-weak\"") \
-_JCObserve(TARGET, KEYPATH) \
+_JCObserver(TARGET, KEYPATH) \
 _Pragma("clang diagnostic pop") \
 })
 #endif

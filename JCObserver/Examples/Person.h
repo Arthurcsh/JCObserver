@@ -12,9 +12,5 @@
 
 @property (nonatomic,copy) NSString *username;
 @property (nonatomic,copy) NSString *address;
-/**
- *  <#注释#>
- **/
-@property (nonatomic,assign) NSInteger age;
 
 @end
